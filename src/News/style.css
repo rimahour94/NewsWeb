@@ -1,0 +1,137 @@
+*{
+    font-size: 1rem;
+}
+
+.App {
+    text-align: center;
+    position: fixed;
+    background-color: rgb(1 14 41);
+    color: #d6a329;
+    width: 100%;
+    margin: auto;
+    padding: 2px;
+  }
+
+img{
+    width: 56%;
+}
+
+.ContainerNews{
+    width: 100%;
+    padding-top: 54px;
+    display: flex;
+    background-color: #171717;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+    
+}
+
+.post{
+    font-size: .8rem;
+    color: #d2dad9;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.post:hover{
+    text-decoration: underline;
+}
+
+
+.details{
+    width: 22%;
+    margin-bottom: 66px;
+    margin-left: 16px;
+}
+::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-track {
+    background: black;
+  }
+::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    
+  }
+  ::-webkit-scrollbar:hover{
+    width: 15px;
+}
+
+.burgurMenu {
+    margin-top: -24px;
+    /* margin-left: 5px; */
+    width: 45px;
+    color: white;
+    cursor: pointer;
+    /* padding-top: 5px; */
+    padding-bottom: 19px;
+}
+.burger{
+    background-color: rgb(201 163 41);
+    height: 1px;
+    width: 25px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.brgrMenu{
+    width: 16%;
+    height: 77px;
+    position: absolute;
+    background-color: #a97908;
+    right: 100%;
+    transition: all .8s;
+}
+
+.menu{
+    color: #010e29;
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 10px;
+    list-style: none;
+    
+}
+
+.aboutUs{
+    background-color: white;
+    /* position: absolute; */
+    /* width: 100%; */
+    padding: 0 0 0 5px;
+    height: 76px;
+    margin: -16px 0px 15px -11px;
+
+}
+
+
+
+/* For Phone */
+
+@media screen and (max-width: 700px)
+{
+    .ContainerNews{
+        display: block;
+        padding-bottom: 1px;
+    }
+   img{
+       width:95%;
+       margin-bottom: 5px;
+   }
+   .details {
+    width: 92%;
+    margin: auto auto 66px 6.4%;
+}
+.post {
+    font-size: 1.1rem;
+    font-family: inherit;
+ 
+}
+
+.brgrMenu {
+    display: none;   
+}
+}
