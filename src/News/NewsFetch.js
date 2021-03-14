@@ -14,7 +14,7 @@ function NewsFetch(){
     const [err, seterr] = useState('')
 
     useEffect(()=>{
-        fetch("https://hn.algolia.com/api/v1/search?query=react")
+        fetch("https://newsapi.org/v2/top-headlines?country=in&apiKey=2cf734afaea34b3783fc22e3f48b4f01")
         .then((res)=>{
            console.log(res.data.articles) 
            setLoading(false)
